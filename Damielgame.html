@@ -17,7 +17,10 @@
 
 
 	<script>
-
+	//for MOBILE DEVICE controls
+	let message = "TAP/CLICK"
+	let touchingNow = false
+	//END OF mobile device let statements
 	let scene = document.querySelector("a-scene")
 	let camera = document.querySelector("a-camera")
 	let cameraPos = camera.getAttribute("position")
@@ -34,10 +37,8 @@
 	let birdseye = false
 
 	window.onload = function() {
-	//for MOBILE DEVICE controls
-	let message = "TAP/CLICK"
-	let touchingNow = false
-	//END OF mobile device let statements
+
+
 		
 		walls.push(new Wall(x = -2, z = -1, width = 2, length = 6, "yellow"))
 		walls.push(new Wall(x = 2, z = 1, width = 2, length = 3, "pink"))
